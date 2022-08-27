@@ -13,47 +13,47 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	@RequestMapping("/")
+	@GetMapping("/")
 	public String sayHello() {
 		return "Hello World!";
 	}
 
-	@RequestMapping("/regs")
+	@GetMapping("/regs")
 	public String regsList() {
 		return "Regulations";
 	}
 
-	@RequestMapping("/regs/edit")
+	@GetMapping("/regs/edit")
 	public String regsEdit() {
 		return "Edit Regs";
 	}
 
-	@RequestMapping("/decisions")
+	@GetMapping("/decisions")
 	public String decisions() {
 		return "Decisions";
 	}
 
-	@RequestMapping("/decisions/edit")
+	@GetMapping("/decisions/edit")
 	public String decisionsEdit() {
 		return "Edit Decisions";
 	}
 
-	@RequestMapping("/drivers")
+	@GetMapping("/drivers")
 	public String drivers() {
 		return "Drivers";
 	}
 
-	@RequestMapping("/drivers/edit")
+	@GetMapping("/drivers/edit")
 	public String driversEdit() {
 		return "Edit Drivers";
 	}
 
-	@RequestMapping("/leagues")
+	@GetMapping("/leagues")
 	public String leagues() {
 		return "Leagues";
 	}
 
-	@RequestMapping("/leagues/edit")
+	@GetMapping("/leagues/edit")
 	public String leaguesEdit() {
 		return "Edit Leagues";
 	}
