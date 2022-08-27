@@ -58,32 +58,32 @@ public class DemoApplication {
 		return "Edit Leagues";
 	}
 
-	@RequestMapping("/event")
+	@GetMapping("/event")
 	public String events() {
 		return "Events";
 	}
 
-	@RequestMapping("/event/edit")
+	@GetMapping("/event/edit")
 	public String eventEdit() {
 		return "Edit Event";
 	}
 
-	@RequestMapping("/reports")
+	@GetMapping("/reports")
 	public String reports() {
 		return "Reports";
 	}
 
-	@RequestMapping("/reports/edit")
+	@GetMapping("/reports/edit")
 	public String reportEdit() {
 		return "Edit Report";
 	}
 
-	@RequestMapping("/reports/penalty")
+	@GetMapping("/reports/penalty")
 	public String penalty() {
 		return "Penalty";
 	}
 
-	@RequestMapping("/reports/appeal")
+	@GetMapping("/reports/appeal")
 	public String appeal() {
 		return "Appeal";
 	}
