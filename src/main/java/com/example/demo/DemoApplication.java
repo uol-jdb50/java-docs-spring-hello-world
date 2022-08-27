@@ -13,7 +13,7 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	@GetMapping("/greeting")
+	@GetMapping("/")
 	public String sayHello(@RequestParam(name="name", required=true), String name, Model model) {
 		model.addAttribute("name", name);
 		return "Welcome to the Assetto Friends Penalty Tracking System (AFPenalty), " + name;
