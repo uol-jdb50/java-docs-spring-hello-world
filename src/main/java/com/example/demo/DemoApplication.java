@@ -13,7 +13,7 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	@GetMapping("/")
+	@GetMapping("/index")
 	public String sayHello() {
 		return "Welcome to the Assetto Friends Penalty Tracking System (AFPenalty)";
 	}
