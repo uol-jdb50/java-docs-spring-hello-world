@@ -14,8 +14,9 @@ public class DemoApplication {
 	}
 
 	@GetMapping("/index")
-	public String sayHello() {
-		return "Welcome to the Assetto Friends Penalty Tracking System (AFPenalty)";
+	public String sayHello(@RequestParam(name="name", required=true), String name, Model model) {
+		model.addAttribute("name", name);
+		return "index";
 	}
 
 	@GetMapping("/regs")
